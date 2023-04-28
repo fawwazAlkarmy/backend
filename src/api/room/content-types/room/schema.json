@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "singularName": "room",
+    "pluralName": "rooms",
+    "displayName": "room",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "room_number": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "number_of_people": {
+      "type": "integer"
+    },
+    "room_is_empty": {
+      "type": "boolean",
+      "required": true
+    },
+    "last_rent_payment": {
+      "type": "date"
+    },
+    "last_electricity_payment": {
+      "type": "date"
+    },
+    "last_internet_payment": {
+      "type": "date"
+    },
+    "delayed_payment": {
+      "type": "boolean"
+    },
+    "room_has_problem": {
+      "type": "boolean"
+    },
+    "extra_notes": {
+      "type": "text"
+    },
+    "resident_name": {
+      "type": "string",
+      "unique": true
+    },
+    "residents_info": {
+      "type": "richtext"
+    }
+  }
+}
